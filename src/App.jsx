@@ -248,12 +248,12 @@ function ContactButton({ link }) {
         variant={link.primary ? "default" : "outline"}
         className={
           link.primary
-            ? `h-12 w-full justify-start rounded-2xl ${accent.button} font-semibold shadow-lg shadow-sky-950/20 transition-shadow hover:shadow-sky-900/30`
-            : "h-12 w-full justify-start rounded-2xl border-white/10 bg-white/5 text-white hover:bg-white/10 hover:text-white"
+            ? `h-12 w-full justify-center rounded-2xl ${accent.button} font-semibold shadow-lg shadow-sky-950/20 transition-shadow hover:shadow-sky-900/30`
+            : "h-12 w-full justify-center rounded-2xl border-white/10 bg-white/5 text-white hover:bg-white/10 hover:text-white"
         }
       >
         <a href={link.href} target={isExternal ? "_blank" : undefined} rel={isExternal ? "noreferrer" : undefined}>
-          <Icon className="mr-3 h-4 w-4" /> {link.label}
+          <Icon className="mr-2 h-4 w-4" /> {link.label}
         </a>
       </Button>
     </motion.div>
